@@ -1,0 +1,10 @@
+RewriteEngine on
+Options -MultiViews
+
+# These are our API endpoints
+RewriteRule ^register$ register.php [L]
+RewriteRule ^unregister$ unregister.php [L]
+RewriteRule ^list$ list [L]
+
+# Don't allow access to anything else
+RewriteRule ^$ - [F]
